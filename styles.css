@@ -1,0 +1,195 @@
+/** Estilos generales */
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #a855f7; /* morado */
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Navbar */
+nav.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  color: #6b21a8; /* lila oscuro */
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #9333ea; /* morado claro */
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background-image: url('imagenes/imagne fondo.jpg'); 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 180px 20px 20px; /* espacio arriba y abajo para la imagen */
+  text-align: center;
+  overflow: visible;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+header.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+header.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.profile-img {
+  display: block;
+  margin: 20px auto 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  image-rendering: auto; /* asegurar buena calidad */
+  /* Si tienes la imagen original en alta resolución, asegúrate de que sea al menos 180x180 px */
+}
+  
+
+#contacto .section-title {
+  color: white;
+}
+#contacto {
+  background-color: #7c3aed; /* morado */
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px; /* opcional para controlar ancho */
+  margin: 40px auto; /* centrar en la página */
+  color: white; /* texto blanco para buen contraste */
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3); /* sombra suave */
+}
+
+/* ==== ESTILO GENERAL ==== */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f8f6fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  background-color: #fff;
+  border-bottom: 2px solid #e1bee7;
+}
+
+.navbar-brand {
+  color: #6a1b9a !important;
+  font-weight: 800;
+}
+
+.nav-link {
+  color: #5e35b1 !important;
+  font-weight: 600;
+}
+
+.nav-link.active {
+  color: #ab47bc !important;
+}
+
+/* ==== ENCABEZADO DE SECCIÓN ==== */
+#portfolio h1 {
+  color: #6a1b9a;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ==== CONTENEDOR DE PROYECTOS ==== */
+.portfolio-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(138, 43, 226, 0.15);
+}
+
+/* Imagen del proyecto */
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #e1bee7;
+}
+
+/* Contenido del proyecto */
+.content-holder {
+  padding: 20px;
+}
+
+/* ==== TÍTULOS DE PROYECTOS ==== */
+h6.title {
+  color: #8e24aa;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* ==== DESCRIPCIÓN DE PROYECTOS ==== */
+.subtitle {
+  font-weight: 300;
+  color: #5e5e5e;
+  font-size: 0.95rem;
+}
+
+/* ==== SECCIÓN DE FONDO ==== */
+.bg-custom-gray {
+  background-color: #f3e5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* ==== FOOTER (si usas uno) ==== */
+footer {
+  background-color: #ede7f6;
+  color: #6a1b9a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
